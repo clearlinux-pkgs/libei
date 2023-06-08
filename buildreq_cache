@@ -1,0 +1,9 @@
+1.0.0
+libxkbcommon-dev
+pkgconfig(basu)
+pkgconfig(epoll-shim)
+pkgconfig(libelogind)
+pkgconfig(libevdev)
+pkgconfig(libsystemd)
+pkgconfig(systemd)
+pkgconfig(xkbcommon)
