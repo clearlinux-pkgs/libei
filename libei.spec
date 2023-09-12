@@ -4,10 +4,10 @@
 # Using build pattern: meson
 #
 Name     : libei
-Version  : 1.0.0
-Release  : 1
-URL      : https://gitlab.freedesktop.org/libinput/libei/-/archive/1.0.0/libei-1.0.0.tar.gz
-Source0  : https://gitlab.freedesktop.org/libinput/libei/-/archive/1.0.0/libei-1.0.0.tar.gz
+Version  : 1.1.0
+Release  : 2
+URL      : https://gitlab.freedesktop.org/libinput/libei/-/archive/1.1.0/libei-1.1.0.tar.gz
+Source0  : https://gitlab.freedesktop.org/libinput/libei/-/archive/1.1.0/libei-1.1.0.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : MIT
@@ -75,15 +75,15 @@ license components for the libei package.
 
 
 %prep
-%setup -q -n libei-1.0.0
-cd %{_builddir}/libei-1.0.0
+%setup -q -n libei-1.1.0
+cd %{_builddir}/libei-1.1.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1686254938
+export SOURCE_DATE_EPOCH=1694547291
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -129,11 +129,11 @@ DESTDIR=%{buildroot} ninja -C builddir install
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libei.so.1
-/usr/lib64/libei.so.1.0.0
+/usr/lib64/libei.so.1.1.0
 /usr/lib64/libeis.so.1
-/usr/lib64/libeis.so.1.0.0
+/usr/lib64/libeis.so.1.1.0
 /usr/lib64/liboeffis.so.1
-/usr/lib64/liboeffis.so.1.0.0
+/usr/lib64/liboeffis.so.1.1.0
 
 %files license
 %defattr(0644,root,root,0755)
